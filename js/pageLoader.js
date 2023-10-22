@@ -1,27 +1,22 @@
-async function pageLoader () {
-  await fetch('./partials/header.html')
-    .then(response => response.text())
-    .then(data => {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(data, 'text/html');
-      const importedContent = doc.querySelector('body').innerHTML;
-      document.querySelector('body').insertAdjacentHTML('beforeend', importedContent);
-    })
-  await fetch('./partials/main.html')
-    .then(response => response.text())
-    .then(data => {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(data, 'text/html');
-      const importedContent = doc.querySelector('body').innerHTML;
-      document.querySelector('body').insertAdjacentHTML('beforeend', importedContent);
-    });
-  await fetch('./partials/description.html')
-    .then(response => response.text())
-    .then(data => {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(data, 'text/html');
-      const importedContent = doc.querySelector('body').innerHTML;
-      document.querySelector('body').insertAdjacentHTML('beforeend', importedContent);
+async function fetchAndInsertPages() {
+    const arrayPages = [
+        './partials/header.html',
+        './partials/main.html',
+        './partials/description.html'
+    ];
+
+    const data = await Promise.all(arrayPages.map(async el => {
+        const response = await fetch(el);
+        return response.text();
+    }));
+
+    data.forEach(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const importedContent = doc.querySelector('body').innerHTML;
+        document.querySelector('body').insertAdjacentHTML('beforeend', importedContent);
     });
 }
-pageLoader().catch()
+
+fetchAndInsertPages().catch()
+
