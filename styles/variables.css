@@ -1,0 +1,10 @@
+:root{
+    --primary-color: #111111;
+    --seconday-color: #1E1823;
+    --orange-color: #FD9222;
+    --linen-color: #FCF1E0;
+    --light-gray-color: #FAFAFA;
+
+    /* Fonts */
+    --main-ff: 'Montserrat', sans-serif;
+}
