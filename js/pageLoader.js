@@ -1,13 +1,13 @@
 async function fetchAndInsertPages() {
     const arrayPages = [
-        './partials/header.html',
-        './partials/hero.html',
-        './partials/description.html',
-        './partials/tastes.html',
-        './partials/mading.html',
+        './partials/footer.html',
         './partials/coments.html',
-        './partials/footer.html'
-    ];
+        './partials/mading.html',
+        './partials/tastes.html',
+        './partials/description.html',
+        './partials/hero.html',
+        './partials/header.html',
+    ]
 
     const data = await Promise.all(arrayPages.map(async el => {
         const response = await fetch(el);
