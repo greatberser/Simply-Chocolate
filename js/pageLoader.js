@@ -18,7 +18,7 @@ async function fetchAndInsertPages() {
         const parser = new DOMParser();
         const doc = parser.parseFromString(html, 'text/html');
         const importedContent = doc.querySelector('body').innerHTML;
-        document.querySelector('body').insertAdjacentHTML('beforebegin', importedContent);
+        document.querySelector('body').insertAdjacentHTML('afterbegin', importedContent);
     });
 }
 
