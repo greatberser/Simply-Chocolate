@@ -5,7 +5,7 @@ async function fetchAndInsertPages() {
         './partials/description.html',
         './partials/tastes.html',
         './partials/mading.html',
-        './partials/commetns.html',
+        './partials/cometns.html',
         './partials/footer.html'
     ];
 
