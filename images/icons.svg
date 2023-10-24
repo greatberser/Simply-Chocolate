@@ -1,0 +1,8 @@
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <symbol id="logo-desktop_tablet" viewBox="0 0 24 24">
+            <path d="M2.95799 15.0567L11.0406 1.98848L11.5206 1.4829L17.6974 5.60128L17.7397 8.08653L19.2472 10.5462L12.5874 21.1036L2.95799 15.0567Z" fill="#FCF1E0"/>
+            <path d="M16.2259 17.9096L5.5868 11.2615M8.52069 6.44892L19.1598 13.097M7.97248 19.3981L16.7742 4.96039M20.3823 11.0918C18.1025 9.66717 17.2071 8.55383 18.674 6.14755L11.4546 1.63635L2.6529 16.0741L13.2921 22.7221L20.3823 11.0918Z" stroke="#FD9222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </symbol>
+    </defs>
+</svg>
