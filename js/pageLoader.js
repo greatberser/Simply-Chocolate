@@ -23,4 +23,3 @@ async function fetchAndInsertPages() {
 }
 
 fetchAndInsertPages().catch()
-
