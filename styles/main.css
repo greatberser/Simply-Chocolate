@@ -5,3 +5,10 @@
 @import url('./global-styles.css');
 
 /* Section's styles */
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./description.css');
+@import url('./tastes.css');
+@import url('./mading.css');
+@import url('./coments.css');
+@import url('./footer.css');
