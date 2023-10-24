@@ -18,3 +18,10 @@
     font-style: normal;
     font-weight: 600;
 }
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+    font-style: normal;
+    font-weight: 700;
+}

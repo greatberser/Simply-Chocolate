@@ -1,3 +1,20 @@
-body{
+body {
     font-family: var(--main-ff);
+}
+.container {
+    max-width: 1136px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.icon {
+
 }

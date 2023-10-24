@@ -1,0 +1,52 @@
+.header-container {
+    padding-top: 24px;
+    padding-bottom: 32px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+.nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 447px;
+}
+
+.span-link {
+    font-style: italic;
+}
+
+.list {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
+
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.11; /* 111.111% */
+    letter-spacing: -0.54px;
+}
+
+.menu-list {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14; /* 114.286% */
+    letter-spacing: -0.28px;
+
+}
+
+.address-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px
+}
