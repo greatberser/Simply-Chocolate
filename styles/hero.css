@@ -2,6 +2,8 @@
     width: 1136px;
     height: 600px;
 
+    margin-bottom: 72px;
+
     background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%,
     rgba(17, 17, 17, 0.40) 100%), url('../images/chocolate-covered-cocoa-powder-desktop-x1.jpg'),
     lightgray -70.319px -105.03px / 110.32% 139.265% no-repeat;

@@ -2,7 +2,8 @@ body {
     font-family: var(--main-ff);
 }
 .container {
-    max-width: 1136px;
+    max-width: 1200px;
+    width: 1136px;
     margin: 0 auto;
 }
 
