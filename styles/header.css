@@ -50,3 +50,11 @@
     justify-content: space-between;
     gap: 18px
 }
+
+.address-icon {
+    stroke: var(--primary-color)
+}
+
+.address-icon:hover {
+    stroke: var(--orange-color);
+}

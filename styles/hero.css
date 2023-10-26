@@ -1,0 +1,124 @@
+.container-hero {
+    width: 1136px;
+    height: 600px;
+
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%,
+    rgba(17, 17, 17, 0.40) 100%), url('../images/chocolate-covered-cocoa-powder-desktop-x1.jpg'),
+    lightgray -70.319px -105.03px / 110.32% 139.265% no-repeat;
+
+    border-radius: 2vmax;
+}
+
+.hero-block {
+    padding: 381px 40px 40px;
+
+    display: flex;
+    width: 1056px;
+    height: 179px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.span-block {
+    width: 484px;
+    height: 102px;
+
+    color: white;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 121.429%;
+    letter-spacing: -0.84px;
+}
+
+.btns-block {
+    display: flex;
+    width: 1056px;
+    height: 45px;
+    align-items: flex-end;
+    gap: 585px;
+    flex-shrink: 0;
+}
+
+.hero-btns {
+    display: flex;
+    width: 341px;
+    height: 45px;
+    align-items: flex-start;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.hero-btn {
+    display: flex;
+    padding: 14px 40px;
+    align-items: flex-start;
+    gap: 14px;
+    flex-shrink: 0;
+
+    border-radius: 100px;
+
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.hero-btn1 {
+    background: var(--orange-color);
+}
+.hero-btn1:hover {
+    color: var(--orange-color);
+    background: var(--linen-color);
+}
+.hero-btn2 {
+    width: 183px;
+    height: 45px;
+
+    border: 1px solid #FFF;
+}
+.hero-btn2:hover {
+    color: var(--orange-color);
+    border-color: var(--orange-color);
+}
+.span-btn {
+    height: 17px;
+}
+.span-btn2 {
+    width: 103px;
+    height: 17px;
+    flex-shrink: 0;
+}
+
+.scroll {
+    display: flex;
+    width: 130px;
+    height: 38px;
+    align-items: center;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.scroll-text {
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.42px;
+}
+
+.scroll-btn {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+    position: relative;
+}
+.scroll-arrow {
+    position: absolute;
+    top: 8px;
+    left:8px;
+}
