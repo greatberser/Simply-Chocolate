@@ -58,3 +58,7 @@
 .address-icon:hover {
     stroke: var(--orange-color);
 }
+
+.link:hover {
+    color: var(--orange-color);
+}

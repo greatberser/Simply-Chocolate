@@ -1,0 +1,8 @@
+.taste-container {
+    display: flex;
+    height: 476px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    flex-shrink: 0;
+}
