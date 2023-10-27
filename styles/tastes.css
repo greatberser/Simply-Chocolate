@@ -1,4 +1,6 @@
 .taste-container {
+    margin-bottom: 100px;
+
     display: flex;
     height: 476px;
     flex-direction: column;
