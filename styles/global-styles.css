@@ -28,3 +28,29 @@ ul {
     color: #fff;
     padding: 12px 28px;
 }
+
+.input {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.headline {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.headline span {
+    color: var(--orange-color)
+}
