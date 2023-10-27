@@ -6,3 +6,204 @@
     gap: 50px;
     flex-shrink: 0;
 }
+
+.taste-about {
+    display: flex;
+    width: 486px;
+    height: 156px;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    flex-shrink: 0;
+}
+
+.taste-about__headline {
+    width: 411px;
+
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+.taste-about__headline span {
+    color: var(--orange-color)
+}
+
+.taste-about__description {
+    width: 486px;
+
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+}
+
+.taste-cards {
+    display: flex;
+    align-items: flex-start;
+    gap: 19px;
+}
+
+.taste-card {
+    position: relative;
+    width: 270px;
+    height: 270px;
+}
+
+.taste-card__preview {
+    display: flex;
+    padding: 28px 36px 28px 28px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 36px;
+
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.card-orange {
+    border-radius: 15px;
+    background: var(--orange-color);
+}
+
+.card-white {
+    border-radius: 15px;
+    border: 1px solid var(--orange-color);
+    background: white;
+}
+
+.card-black {
+    border-radius: 15px;
+    background: var(--seconday-color);
+}
+
+.taste-card__name {
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+}
+
+.taste-card__name.black {
+    color: var(--primary-color);
+}
+
+.taste-card__img {
+    width: 206px;
+    height: 160px;
+}
+
+.taste-card__description {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 15px;
+    border: 1px solid var(--orange-color);
+    background: white;
+
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+    transform: rotateY(180deg);
+}
+
+.taste-card:hover .taste-card__preview {
+    transform: rotateY(180deg);
+}
+
+.taste-card:hover .taste-card__description {
+    transform: rotateY(0deg);
+}
+
+.taste-card__description-block {
+    display: flex;
+    width: 230px;
+    height: 230px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    flex-shrink: 0;
+}
+
+.taste-card__description-text {
+    width: 230px;
+    height: 162px;
+    flex-shrink: 0;
+
+    overflow: hidden;
+    color: var(--primary-color);
+    text-overflow: ellipsis;
+    /*white-space: nowrap;*/
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+}
+
+.taste-card__description-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.taste-card__description-about__headline {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.54px;
+    text-transform: uppercase;
+}
+
+.taste-card__description-about__btns {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+
+}
+
+.taste-card__description-about__btn {
+    display: flex;
+    padding: 6px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    border-radius: 35px;
+    border: 1px solid var(--orange-color);
+    background: white;
+
+    color: var(--primary-color);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px; /* 120% */
+}
+
+.taste-card__description-about__btn:hover {
+    background: var(--orange-color);
+
+    color: white;
+}
+
+
+
+

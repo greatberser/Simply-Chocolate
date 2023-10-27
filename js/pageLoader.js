@@ -26,11 +26,10 @@ async function fetchAndInsertPages() {
             document.querySelector('main').insertAdjacentHTML('afterbegin', importedContent)
         }
     }
-    
-
 }
+fetchAndInsertPages()
+    .catch()
 
-fetchAndInsertPages().catch()
 
 //
 //
