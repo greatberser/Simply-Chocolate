@@ -9,21 +9,6 @@
     flex-shrink: 0;
 }
 
-.made-headline {
-    color: var(--primary-color);
-    text-align: center;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px; /* 116.667% */
-    letter-spacing: -0.72px;
-    text-transform: uppercase;
-}
-
-.made-headline span {
-    color: var(--orange-color);
-}
-
 .made-block {
     display: flex;
     height: 400px;
