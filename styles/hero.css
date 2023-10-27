@@ -103,6 +103,16 @@
     flex-shrink: 0;
 }
 
+.scroll:hover .scroll-text {
+    color: var(--orange-color)
+}
+.scroll:hover .scroll-icon {
+    fill: var(--orange-color);
+}
+.scroll:hover .scroll-arrow {
+    fill: var(--light-gray-color);
+}
+
 .scroll-text {
     color: white;
     font-size: 14px;
@@ -119,8 +129,15 @@
     flex-shrink: 0;
     position: relative;
 }
+
+.scroll-icon {
+    fill: white;
+}
+
 .scroll-arrow {
     position: absolute;
     top: 8px;
     left:8px;
+
+    fill: var(--orange-color);
 }
