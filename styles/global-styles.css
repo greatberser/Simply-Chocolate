@@ -38,6 +38,7 @@ ul {
     font-size: inherit;
     background-color: transparent;
     box-sizing: border-box;
+
 }
 
 .headline {
@@ -54,3 +55,4 @@ ul {
 .headline span {
     color: var(--orange-color)
 }
+

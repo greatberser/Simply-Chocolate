@@ -42,5 +42,60 @@
             </li>
         </ul>
         <button type="button" class="btn comments-btn">Leave  a review</button>
+
+        <div class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-block">
+                <h2 class="headline modal-headline">
+                    LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
+                </h2>
+                <svg class="modal-x_close" width="28" height="28">
+                    <use href="./images/icons.svg#x_close"></use>
+                </svg>
+                <form class="modal-form">
+                    <label for="name" class="modal-form__label">
+                        Name
+                        <input type="text" class="input modal-form__input" id="name" name="name">
+                        <svg class="modal-form__input--icon" width="24" height="24">
+                            <use href="./images/icons.svg#modal-name"></use>
+                        </svg>
+                    </label>
+
+
+                    <label for="email" class="modal-form__label">
+                        Email
+                        <input type="email" class="input modal-form__input" id="email" name="email">
+                        <svg class="modal-form__input--icon" width="24" height="24">
+                            <use href="./images/icons.svg#modal-email"></use>
+                        </svg>
+                    </label>
+
+
+                    <label for="tel" class="modal-form__label">
+                        Phone number
+                        <input type="tel" class="input modal-form__input" id="tel" name="tel" >
+                        <svg class="modal-form__input--icon" width="24" height="24">
+                            <use href="./images/icons.svg#modal-tel"></use>
+                        </svg>
+                    </label>
+
+
+                    <label for="comment" class="modal-form__label">
+                        Comment
+                        <input type="text" class="input modal-form__input" id="comment" name="comment" placeholder="Enter text">
+                    </label>
+                </form>
+                <div class="modal-privacy">
+                    <label for="check" class="modal-privacy__label">
+                        <input type="checkbox" class="input" id="check" name="check">
+                        <span class="modal-privacy__checkbox"></span>
+                    </label>
+                    <span class="modal-privacy__headline">I accept the terms and conditions of the <a href="#" class="link">Privacy Policy</a></span>
+                </div>
+                <button type="button" class="btn modal-btn">Send</button>
+            </div>
+        </div>
     </div>
+
+
 </section>
