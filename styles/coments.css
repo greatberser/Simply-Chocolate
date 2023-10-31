@@ -356,6 +356,10 @@
         flex-shrink: 0;
     }
 
+    .comments-cards {
+        gap: 16px;
+    }
+
     .modal-background {
         width: 768px;
     }
