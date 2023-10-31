@@ -160,6 +160,8 @@
     }
 
     .btns-block {
+        width: 624px;
+
         gap: 153px;
     }
 }
