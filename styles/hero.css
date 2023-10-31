@@ -141,3 +141,25 @@
 
     fill: var(--orange-color);
 }
+
+@media (max-width: 768px) {
+    .container-hero {
+        width: 704px;
+        height: 890px;
+
+        background: url("../images/chocolate-covered-cocoa-powder-tablet-x1.jpg");
+
+        margin-bottom: 40px;
+    }
+
+    .hero-block {
+        padding: 671px 40px 40px;
+
+        width: 624px;
+        height: 179px;
+    }
+
+    .btns-block {
+        gap: 153px;
+    }
+}

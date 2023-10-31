@@ -149,3 +149,27 @@
 
     color: var(--orange-color);
 }
+
+@media (max-width: 768px) {
+    .footer-container {
+        width: 768px;
+        height: 291px;
+    }
+
+    .footer-block {
+        gap: 32px;
+    }
+
+    .footer-nav {
+        gap: 16px;
+    }
+
+    .footer-email {
+        width: 233px;
+    }
+
+    .footer-email::placeholder {
+        font-size: 14px;
+        letter-spacing: -0.28px;
+    }
+}

@@ -41,6 +41,11 @@
     gap: 19px;
 }
 
+.taste-cards__column {
+    display: flex;
+    gap: 19px;
+}
+
 .taste-card {
     position: relative;
     width: 270px;
@@ -191,6 +196,74 @@
     background: var(--orange-color);
 
     color: white;
+}
+
+@media (max-width: 768px) {
+    .taste-container {
+        height: 778px;
+
+        margin-bottom: 80px;
+    }
+
+     .taste-cards {
+         display: flex;
+         width: 704px;
+         height: 572px;
+         flex-wrap: wrap;
+         justify-content: center;
+         flex-direction: column;
+         align-content: stretch;
+         gap: 32px;
+     }
+
+     .taste-cards__column {
+         display: flex;
+         width: 336px;
+         height: 572px;
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 32px;
+         flex-shrink: 0;
+     }
+
+     .taste-cards__column:last-of-type {
+         flex-direction: column-reverse;
+     }
+
+    .taste-card__preview {
+        width: 336px;
+        height: 270px;
+
+        justify-content: normal;
+
+        padding: 28px 56px 71px;
+    }
+
+     .taste-card__img {
+         width: 224px;
+         height: 171px;
+
+     }
+
+     .taste-card__name {
+         position: absolute;
+         left: 28px;
+         bottom: 28px;
+     }
+
+     .taste-card__description {
+        padding: 28px;
+     }
+
+     .taste-card__description-block {
+         width: 280px;
+         height: 214px;
+     }
+
+     .taste-card__description-text {
+         width: 280px;
+         height: 146px;
+     }
 }
 
 

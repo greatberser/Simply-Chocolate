@@ -4,7 +4,19 @@
             HOW IT’S <span>made?</span>
         </h2>
         <div class="made-block">
-            <img src="./images/hot-chocolate-img-desktop-x1.png" alt="hot-chocolate">
+            <picture>
+                <source
+                        media="(max-width: 1200px)"
+                        srcset="./images/hot-chocolate-img-desktop-x1.png 1x,
+                                ./images/hot-chocolate-img-desktop-x2.png 2x"
+                />
+                <source
+                        media="(max-width: 768px)"
+                        srcset="./images/hot-chocolate-img-tablet_mobile-x1.png 1x,
+                                ./images/hot-chocolate-img-tablet_mobile-x2.png 2x"
+                />
+                <img class="made-img" src="./images/hot-chocolate-img-desktop-x1.png" alt="hot-chocolate"/>
+            </picture>
             <div class="made-description">
                 <div class="made-description__block">
                     <p class="made-description__p">

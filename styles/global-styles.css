@@ -1,5 +1,6 @@
 body {
     font-family: var(--main-ff);
+    background: var(--light-gray-color);
 }
 .container {
     max-width: 1200px;
@@ -56,3 +57,10 @@ ul {
     color: var(--orange-color)
 }
 
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 768px;
+        width: 704px;
+    }
+}
