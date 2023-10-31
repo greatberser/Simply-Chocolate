@@ -341,6 +341,26 @@
 
 
 
+@media (max-width: 768px) {
+    .comments-card:last-of-type {
+        display: none;
+    }
+
+    .comments-block {
+        display: flex;
+        width: 704px;
+        height: 285px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        flex-shrink: 0;
+    }
+
+    .modal-background {
+        width: 768px;
+    }
+
+}
 
 
 

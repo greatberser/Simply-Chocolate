@@ -61,3 +61,26 @@
 .link:hover {
     color: var(--orange-color);
 }
+
+
+
+
+@media (max-width: 768px) {
+    .header-container {
+        gap: 48px;
+    }
+
+    .nav {
+        gap: 101px;
+    }
+    
+    .logo {
+        font-size: 14px;
+    }
+
+    .icon-logo {
+        width: 21px;
+        height: 21px;
+    }
+}
+
