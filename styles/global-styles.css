@@ -64,3 +64,10 @@ ul {
         width: 704px;
     }
 }
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 375px;
+        width: 335px;
+    }
+}
