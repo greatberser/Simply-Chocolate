@@ -266,6 +266,56 @@
      }
 }
 
+@media (max-width: 375px) {
+    .taste-container {
+        height: auto;
+
+        margin-bottom: 60px;
+
+        gap: 32px;
+    }
+
+    .taste-about {
+        width: 335px;
+        height: 204px;
+
+        gap: 24px;
+    }
+
+    .headline.taste {
+        width: 283px;
+        height: 72px;
+
+        font-size: 20px;
+        line-height: 24px; /* 120% */
+        letter-spacing: -0.6px;
+    }
+
+    .taste-about__description {
+        width: 335px;
+    }
+
+    .taste-cards {
+        width: 335px;
+        height: 1140px;
+
+        flex-wrap: nowrap;
+        justify-content: normal;
+
+        gap: 20px;
+    }
+
+    .taste-cards__column {
+        height: auto;
+
+        gap: 20px;
+    }
+
+    .taste-cards__column:last-of-type {
+        flex-direction: column;
+    }
+}
+
 
 
 

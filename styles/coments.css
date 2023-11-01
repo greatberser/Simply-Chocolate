@@ -366,6 +366,121 @@
 
 }
 
+@media (max-width: 375px) {
+    .comments-container {
+        height: 404px;
+
+        margin-bottom: 60px;
+
+        gap: 32px;
+    }
+
+    .comments-block {
+        width: 335px;
+        height: 275px;
+
+        gap: 20px;
+    }
+
+    .comments-card {
+        display: none;
+    }
+
+    .comments-card:first-child {
+        display: block;
+    }
+
+    .comments-btn {
+        width: 165px;
+        height: 41px;
+
+        padding: 12px 28px;
+
+        font-size: 14px;
+    }
+
+    .modal-block {
+        width: 311px;
+        height: 619px;
+    }
+
+    .headline.modal-headline {
+        width: 255px;
+
+        font-size: 20px;
+        line-height: 24px; /* 120% */
+        letter-spacing: -0.6px;
+
+        top: 32px;
+        left: 24px;
+
+    }
+
+    .modal-x_close {
+        width: 24px;
+        height: 24px;
+
+        top: 14px;
+        right: 14px;
+    }
+
+    .modal-form {
+        top: 112px;
+        left: 24px;
+
+        gap: 14px;
+    }
+
+    .modal-form__input {
+        width: 263px;
+        height: 45px;
+
+        padding: 14px 18px 14px 36px;
+    }
+
+    .modal-form__label {
+        gap: 4px;
+    }
+
+
+    .modal-form__input--icon {
+        width: 17px;
+        height: 17px;
+
+        top: 36px;
+        left: 18px;
+    }
+
+    .modal-form__input#comment {
+        padding: 14px 18px 60px 18px;
+    }
+
+    .modal-form__input#comment::placeholder {
+        font-size: 14px;
+        letter-spacing: -0.28px;
+    }
+
+    .modal-privacy {
+        left: 24px;
+        bottom: 105px;
+    }
+
+    .modal-privacy__headline {
+        font-size: 12px;
+        line-height: 16px; /* 133.333% */
+        letter-spacing: -0.24px;
+    }
+
+    .modal-btn {
+        padding: 12px 28px;
+
+        left: 24px;
+        bottom: 32px;
+
+        font-size: 14px;
+    }
+}
+
 
 
 

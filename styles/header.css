@@ -4,13 +4,14 @@
 
     display: flex;
     justify-content: space-between;
-    gap: 90px;
+    gap: 447px;
+
 }
 
 .nav {
     display: inline-flex;
     align-items: center;
-    gap: 447px;
+    gap: 90px;
 }
 
 .span-link {
@@ -41,7 +42,6 @@
     font-weight: 500;
     line-height: 1.14; /* 114.286% */
     letter-spacing: -0.28px;
-
 }
 
 .address-list {
@@ -62,18 +62,29 @@
     color: var(--orange-color);
 }
 
+.header-menu {
+    display: none;
+}
 
+.header-menu__x-close {
+    display: none;
+    stroke: white;
+}
+
+.header-menu__x-close:hover {
+    stroke: var(--orange-color);
+}
 
 
 @media (max-width: 768px) {
     .header-container {
-        gap: 48px;
+        gap: 101px;
     }
 
     .nav {
-        gap: 101px;
+        gap: 48px;
     }
-    
+
     .logo {
         font-size: 14px;
     }
@@ -82,5 +93,64 @@
         width: 21px;
         height: 21px;
     }
+
+
 }
 
+@media (max-width: 375px) {
+    .header-container {
+        padding-top: 20px;
+        padding-bottom: 14px;
+
+        gap: 138px;
+    }
+
+    .header-menu {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+
+        width: 220px;
+        height: 812px;
+
+        background: var(--seconday-color);
+
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .header-menu__x-close {
+        display: block;
+
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .menu-list {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+
+        position: absolute;
+        top: 136px;
+        left: 48px;
+    }
+    .menu-list a {
+        color: white;
+    }
+
+    .address-list {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .address-icon {
+        stroke: white;
+    }
+}
