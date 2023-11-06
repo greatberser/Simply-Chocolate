@@ -118,6 +118,31 @@
     color: white;
 }
 
+.btn.left {
+    width: 100px;
+    height: 272px;
+
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+.btn.left:hover {
+    background: rgba(168, 168, 168, 0.6);
+}
+
+.btn.right:hover {
+    background: rgba(168, 168, 168, 0.6);
+}
+
+.btn.right {
+    width: 100px;
+    height: 272px;
+
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
 
 /* Modal */
 
@@ -342,9 +367,6 @@
 
 
 @media (max-width: 768px) {
-    .comments-card:last-of-type {
-        display: none;
-    }
 
     .comments-block {
         display: flex;
@@ -380,14 +402,6 @@
         height: 275px;
 
         gap: 20px;
-    }
-
-    .comments-card {
-        display: none;
-    }
-
-    .comments-card:first-child {
-        display: block;
     }
 
     .comments-btn {
