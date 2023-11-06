@@ -117,32 +117,48 @@
 
     color: white;
 }
-
-.btn.left {
-    width: 100px;
-    height: 272px;
+.btns-slider {
+    width: 62px;
+    height: 62px;
 
     position: absolute;
-    left: 0;
+    top: 168px;
     z-index: 2;
-}
 
-.btn.left:hover {
     background: rgba(168, 168, 168, 0.6);
 }
 
-.btn.right:hover {
-    background: rgba(168, 168, 168, 0.6);
+.btns-slider:hover {
+    background: rgba(252, 241, 224, 0.6);
+}
+
+.btns-slider:hover .btn-arrow{
+    fill: var(--orange-color);
+}
+
+.btn.left {
+    left: -20px;
+}
+
+.btn.left .btn-arrow {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 20px;
+    left: 15px;
 }
 
 .btn.right {
-    width: 100px;
-    height: 272px;
-
-    position: absolute;
-    right: 0;
-    z-index: 2;
+    right: -20px;
 }
+
+.btn.right .btn-arrow {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+
 
 /* Modal */
 
