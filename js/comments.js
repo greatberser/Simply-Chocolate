@@ -6,30 +6,45 @@ function changeCommentsCardOnResize() {
 
     function handleResize() {
         const commentsCards = document.querySelector('.comments-cards')
-        const commentsCard = document.querySelector('.comments-card')
+        const commentsCard = `
+            <li class="comments-card">
+                <div class="comments-card__rectangle"></div>
+                <div class="comments-card__img">
+                    <img src="" alt="photo">
+                    <span class="comments-card__name"></span>
+                </div>
+                <p class="comments-card__p"></p>
+            </li>
+        `
 
+        if (mediaQueryPC.matches) {
+            while (commentsCards.firstChild) {
+                commentsCards.removeChild(commentsCards.firstChild)
+            }
+            for (let i = 0; i < 3; i++) {
+                commentsCards.insertAdjacentHTML("afterbegin", commentsCard)
+            }
 
-        if (mediaQueryPC.matches && commentsCards.children.length === 2) {
-            const cloneCommentsCard = commentsCard.cloneNode(true)
-            commentsCards.appendChild(cloneCommentsCard)
-            fillComment()
         }
 
-        if (mediaQueryTablet.matches && commentsCards.contains(commentsCard) && commentsCard && commentsCards.children.length === 3) {
-            commentsCards.removeChild(commentsCard)
-            fillComment()
+        if (mediaQueryTablet.matches) {
+            while (commentsCards.firstChild) {
+                commentsCards.removeChild(commentsCards.firstChild)
+            }
+            for (let i = 0; i < 2; i++) {
+                commentsCards.insertAdjacentHTML("afterbegin", commentsCard)
+            }
         }
 
-        if (commentsCards.children.length === 1 && mediaQueryTablet.matches) {
-            const cloneCommentsCard = commentsCard.cloneNode(true)
-            commentsCards.appendChild(cloneCommentsCard)
-            fillComment()
+        if (mediaQueryMobile.matches) {
+            while (commentsCards.firstChild) {
+                commentsCards.removeChild(commentsCards.firstChild)
+            }
+            for (let i = 0; i < 1; i++) {
+                commentsCards.insertAdjacentHTML("afterbegin", commentsCard)
+            }
         }
-
-        if (mediaQueryMobile.matches && commentsCard && commentsCards.contains(commentsCard) && commentsCards.children.length === 2) {
-            commentsCards.removeChild(commentsCard)
-            fillComment()
-        }
+        fillComment()
     }
 
     window.addEventListener('resize', handleResize)
@@ -82,9 +97,9 @@ function fillComment() {
     btnLeft.onclick = () => {
         if (btnRight.style.display === 'none') btnRight.style.display = 'block'
 
-        if (current <= commentsCardsChildren.length*2-1) {
+        if (current <= commentsCardsChildren.length * 2 - 1) {
             current = 0
-        } else  current-=commentsCardsChildren.length*2
+        } else current -= commentsCardsChildren.length * 2
 
         for (let i = 0; i < commentsCardsChildren.length; i++) {
             commentsCardsChildren[i].style.display = 'block'
@@ -100,8 +115,8 @@ function fillComment() {
 function reviewModal() {
     const commentsButton = document.querySelector('.comments-btn')
     const modalBackground = document.querySelector('.modal-background')
-    const commentsModal =  document.querySelector('.modal')
-    const modalXClose =  document.querySelector('.modal-x_close')
+    const commentsModal = document.querySelector('.modal')
+    const modalXClose = document.querySelector('.modal-x_close')
 
     commentsButton.addEventListener('click', () => {
         commentsModal.style.display = 'block'
