@@ -1,21 +1,47 @@
-function removeCommentsCardOnSmallView() {
-    const commentsCards = document.querySelector('.comments-cards')
-    const commentsCard = document.querySelector('.comments-card')
-    const commentsCardLast = document.querySelector('.comments-card:last-of-type')
+function changeCommentsCardOnResize() {
+    const mediaQueryPC = window.matchMedia('(min-width: 769px)')
     const mediaQueryTablet = window.matchMedia('(max-width: 768px)')
     const mediaQueryMobile = window.matchMedia('(max-width: 375px)')
 
-    if (mediaQueryTablet.matches) commentsCards.removeChild(commentsCard)
-    if (mediaQueryMobile.matches) commentsCards.removeChild(commentsCardLast)
 
+    function handleResize() {
+        const commentsCards = document.querySelector('.comments-cards')
+        const commentsCard = document.querySelector('.comments-card')
+
+
+        if (mediaQueryPC.matches && commentsCards.children.length === 2) {
+            const cloneCommentsCard = commentsCard.cloneNode(true)
+            commentsCards.appendChild(cloneCommentsCard)
+            fillComment()
+        }
+
+        if (mediaQueryTablet.matches && commentsCards.contains(commentsCard) && commentsCard && commentsCards.children.length === 3) {
+            commentsCards.removeChild(commentsCard)
+            fillComment()
+        }
+
+        if (commentsCards.children.length === 1 && mediaQueryTablet.matches) {
+            const cloneCommentsCard = commentsCard.cloneNode(true)
+            commentsCards.appendChild(cloneCommentsCard)
+            fillComment()
+        }
+
+        if (mediaQueryMobile.matches && commentsCard && commentsCards.contains(commentsCard) && commentsCards.children.length === 2) {
+            commentsCards.removeChild(commentsCard)
+            fillComment()
+        }
+    }
+
+    window.addEventListener('resize', handleResize)
+    handleResize()
 }
 
 // Slider
 
 function updateCard(index, current, commentImg, commentName, commentP) {
-    commentImg[index].src = `${peoples[current].photo}`;
-    commentName[index].innerHTML = `${peoples[current].name}`;
-    commentP[index].innerHTML = `${peoples[current].comment}`;
+    commentImg[index].src = `${peoples[current].photo}`
+    commentName[index].innerHTML = `${peoples[current].name}`
+    commentP[index].innerHTML = `${peoples[current].comment}`
 }
 
 function startPosition(commentsCardsChildren, commentImg, commentName, commentP, btnLeft) {
@@ -75,6 +101,7 @@ function reviewModal() {
     const commentsButton = document.querySelector('.comments-btn')
     const modalBackground = document.querySelector('.modal-background')
     const commentsModal =  document.querySelector('.modal')
+    const modalXClose =  document.querySelector('.modal-x_close')
 
     commentsButton.addEventListener('click', () => {
         commentsModal.style.display = 'block'
@@ -82,5 +109,15 @@ function reviewModal() {
 
     modalBackground.addEventListener('click', () => {
         commentsModal.style.display = 'none'
+    })
+
+    modalXClose.addEventListener('click', () => {
+        commentsModal.style.display = 'none'
+    })
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && commentsModal.style.display === 'block') {
+            commentsModal.style.display = 'none'
+        }
     })
 }

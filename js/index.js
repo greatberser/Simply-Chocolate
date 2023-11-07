@@ -3,7 +3,7 @@ fetchAndInsertPages()
         // Header
         navBar()
         // Comments
-        removeCommentsCardOnSmallView()
+        changeCommentsCardOnResize()
         fillComment()
         reviewModal()
     })
